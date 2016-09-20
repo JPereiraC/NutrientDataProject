@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "library(shiny)\n\nshinyServer(function(input, output, session) {\n        output$DataInformation <- DT::renderDataTable({\n              if (input$showNutrient == 'All') {\n        InformacaoNutricional[, c('Food Group',\n                                  'Food',\n                                  'Per 100g',\n                                  'Per Portion'), drop = F]\n} else if (input$showNutrient != 'All' &&\n           is.null(input$showGroup))\n{\n        InformacaoNutricional[, c('Food Group',\n                                  'Food',\n                                  'Per 100g',\n                                  'Per Portion'), drop = F] %>%\n                filter(InformacaoNutricional$Nutrient == input$showNutrient)\n} else\n{\n        InformacaoNutricional[, c('Food Group',\n                                  'Food',\n                                  'Per 100g',\n                                  'Per Portion'), drop = F] %>%\n                filter(InformacaoNutricional$Nutrient == input$showNutrient) %>%\n                filter(`Food Group` == input$showGroup)\n}  \n        })\n})",
+    "created" : 1474280853319.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2440831367",
+    "id" : "8DF35A03",
+    "lastKnownWriteTime" : 1473692839,
+    "last_content_update" : 1473692839,
+    "path" : "~/Desktop/PAP120184Joana/PAP120184/NutritionApp/server.R",
+    "project_path" : "NutritionApp/server.R",
+    "properties" : {
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

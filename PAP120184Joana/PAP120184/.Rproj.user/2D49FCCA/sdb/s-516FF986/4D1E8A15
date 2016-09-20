@@ -1,0 +1,28 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1474288085143.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "4D1E8A15",
+    "lastKnownWriteTime" : 0,
+    "last_content_update" : 1474288085143,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "shkjb32r42",
+        "caption" : "FOOD_DES",
+        "contentUrl" : "grid_resource/gridviewer.html?env=package%3ANutrientData&obj=FOOD_DES&cache_key=shkjb32r42",
+        "displayedObservations" : 8789,
+        "environment" : "package:NutrientData",
+        "object" : "FOOD_DES",
+        "totalObservations" : 8789,
+        "variables" : 14
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}
